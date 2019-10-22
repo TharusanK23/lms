@@ -1,0 +1,746 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Unicom SD</title>
+
+
+    <!--=============================================================================================================-->
+    <link rel="icon" type="image/x-icon" href="images/0.jpg">
+    <!--=============================================================================================================-->
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <!--=============================================================================================================-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--=============================================================================================================-->
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--=============================================================================================================-->
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <!--=============================================================================================================-->
+    <link rel="stylesheet" type="text/css" href="css/animation.css">
+    <!--=============================================================================================================-->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!--=============================================================================================================-->
+    <link rel="stylesheet" type="text/css" href="css/responsive_align.css">
+    <!--=============================================================================================================-->
+    <link rel="stylesheet" type="text/css" href="css/responsive_style.css">
+    <!--=============================================================================================================-->
+    <link rel="stylesheet" type="text/css" href="css/table.css">
+    <!--=============================================================================================================-->
+    <link rel="stylesheet" type="text/css" href="css/modal_leave.css">
+    <!--=============================================================================================================-->
+    <link rel="stylesheet" type="text/css" href="css/profile.css">
+    <!--=============================================================================================================-->
+
+</head>
+<body class="fade-in one">
+
+
+    <!--||||||||||||||||||\\\\\\\\\\\\\\\\\NAV BAR Start//////////////////||||||||||||||||||||-->
+
+    <nav class="navbar navbar_top navbar-expand-lg navbar-light sticky-top">
+        <a class="navbar-brand" href="index.html"><img class="logo" src="images/04_1.png"> </a>
+
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                        <!--<li class="nav-item active">-->
+                            <!--<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>-->
+                        <!--</li>-->
+                        <!--<li class="nav-item">-->
+                            <!--<a class="nav-link" href="#">Link</a>-->
+                        <!--</li>-->
+                    </ul>
+
+            <form class="form-inline my-2 my-lg-2 search_01" id="demo-2">
+                <input class="input" type="search" placeholder="Search">
+            </form>
+
+            <form class="form-inline my-2 my-lg-2">
+                <a class="nav-item nav-link active" href="#">
+                    <i class="far fa-bell icon"> <span class="align-middle"> Notification</span></i>
+                </a>
+            </form>
+
+            <form class="form-inline my-2 my-lg-2">
+                <a class="nav-item nav-link active" href="#">
+                    <i class="far fa-envelope icon"> <span class="align-middle"> Message</span></i>
+                </a>
+            </form>
+
+            <form class="form-inline my-2 my-lg-2">
+                <div class="navbar-nav mr-auto">
+                    <a class="nav-link user_home" href="#popup1">
+                         <img class="user" src="images/02.png">  <span class="align-middle"> My Account</span>
+                    </a>
+                </div>
+
+        <!--||||||||||||||||||\\\\\\\\\\\\\\\\\Navbar Modal Start//////////////////||||||||||||||||||||-->
+                            <div id="popup1" class="overlay">
+                                <div class="popup">
+                                     <a class="close" href="#">&times;</a>
+                                    <div class="content container">
+                                        <div class="text-center">
+                                            <a href="#openModal-profile" class="user_pop"> <i class="far fa-user-circle"></i> User Profile
+                                            </a>
+                                        </div>
+                                        <hr>
+                                        <div class="text-center logout">
+                                            <button class="btn btn-lg"><i class="fas fa-sign-out-alt"></i> Logout</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+        <!--||||||||||||||||||\\\\\\\\\\\\\\\\\Navbar Modal End//////////////////||||||||||||||||||||-->
+
+            </form>
+
+            <form class="form-inline my-2 my-lg-2 search_02" id="demo-2">
+                <input class="input" type="search" placeholder="Search">
+            </form>
+        </div>
+    </nav>
+
+    <!--||||||||||||||||||\\\\\\\\\\\\\\\\\NAV BAR End//////////////////||||||||||||||||||||-->
+
+    <!--||||||||||||||||||\\\\\\\\\\\\\\\\\SIDE BAR Start//////////////////||||||||||||||||||||-->
+
+
+    <div class="d-flex" id="wrapper">
+
+        <!-- Sidebar -->
+        <div class="" id="sidebar-wrapper">
+            <div class="sidebar-heading">
+                <span class="badge badge-success badge-success-note">Total : <span>21</span></span>
+                |
+                <span class="badge badge-danger badge-danger-note">Leave : <span>03</span></span>
+                <hr>
+            </div>
+
+            <div class="list-group list-group-flush sidenav">
+                <a href="index.html" class="list-group-item list-group-item-action">
+                    <i class="far fa-calendar-alt menu-icon active"></i>&nbsp;&nbsp;  Calender
+                </a>
+                <a href="#" class="list-group-item list-group-item-action dropdown-btn">
+                    <i class="fas fa-users menu-icon"></i>&nbsp;&nbsp;  Team
+                </a>
+                <div class="dropdown-container">
+                    <a href="#" class="list-group-item list-group-item-action dropdown-btn">
+                        <input type="checkbox" class="custom-control-input" id="customCheck1">
+                        <label class="custom-control-label" for="customCheck1">Team 1</label> </a>
+                    <div class="dropdown-container">
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <input type="checkbox" class="custom-control-input" id="memberCheck1">
+                            <label class="custom-control-label" for="memberCheck1">Member 1</label>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <input type="checkbox" class="custom-control-input" id="memberCheck2">
+                            <label class="custom-control-label" for="memberCheck2">Member 2</label>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <input type="checkbox" class="custom-control-input" id="memberCheck3">
+                            <label class="custom-control-label" for="memberCheck3">Member 3</label>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <input type="checkbox" class="custom-control-input" id="memberCheck4">
+                            <label class="custom-control-label" for="memberCheck4">Member 4</label>
+                        </a>
+                    </div>
+
+                    <a href="#" class="list-group-item list-group-item-action dropdown-btn">
+                        <input type="checkbox" class="custom-control-input" id="customCheck2">
+                        <label class="custom-control-label" for="customCheck2">Team 2</label></a>
+                    <div class="dropdown-container">
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <input type="checkbox" class="custom-control-input" id="memberCheck11">
+                            <label class="custom-control-label" for="memberCheck11">Member 1</label>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <input type="checkbox" class="custom-control-input" id="memberCheck21">
+                            <label class="custom-control-label" for="memberCheck21">Member 2</label>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <input type="checkbox" class="custom-control-input" id="memberCheck31">
+                            <label class="custom-control-label" for="memberCheck31">Member 3</label>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <input type="checkbox" class="custom-control-input" id="memberCheck41">
+                            <label class="custom-control-label" for="memberCheck41">Member 4</label>
+                        </a>
+                    </div>
+
+                    <a href="#" class="list-group-item list-group-item-action dropdown-btn">
+                        <input type="checkbox" class="custom-control-input" id="customCheck3">
+                        <label class="custom-control-label" for="customCheck3">Team 3</label>
+                    </a>
+                    <div class="dropdown-container">
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <input type="checkbox" class="custom-control-input" id="memberCheck12">
+                            <label class="custom-control-label" for="memberCheck12">Member 1</label>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <input type="checkbox" class="custom-control-input" id="memberCheck22">
+                            <label class="custom-control-label" for="memberCheck22">Member 2</label>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <input type="checkbox" class="custom-control-input" id="memberCheck32">
+                            <label class="custom-control-label" for="memberCheck32">Member 3</label>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <input type="checkbox" class="custom-control-input" id="memberCheck42">
+                            <label class="custom-control-label" for="memberCheck42">Member 4</label>
+                        </a>
+                    </div>
+
+                    <a href="#" class="list-group-item list-group-item-action dropdown-btn">
+                        <input type="checkbox" class="custom-control-input" id="customCheck4">
+                        <label class="custom-control-label" for="customCheck4">Team 4</label>
+                    </a>
+                    <div class="dropdown-container">
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <input type="checkbox" class="custom-control-input" id="memberCheck13">
+                            <label class="custom-control-label" for="memberCheck13">Member 1</label>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <input type="checkbox" class="custom-control-input" id="memberCheck23">
+                            <label class="custom-control-label" for="memberCheck23">Member 2</label>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <input type="checkbox" class="custom-control-input" id="memberCheck33">
+                            <label class="custom-control-label" for="memberCheck33">Member 3</label>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <input type="checkbox" class="custom-control-input" id="memberCheck43">
+                            <label class="custom-control-label" for="memberCheck43">Member 4</label>
+                        </a>
+                    </div>
+
+                    <a href="#" class="list-group-item list-group-item-action dropdown-btn">
+                        <input type="checkbox" class="custom-control-input" id="customCheck5">
+                        <label class="custom-control-label" for="customCheck5">Team 5</label>
+                    </a>
+                    <div class="dropdown-container">
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <input type="checkbox" class="custom-control-input" id="memberCheck14">
+                            <label class="custom-control-label" for="memberCheck14">Member 1</label>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <input type="checkbox" class="custom-control-input" id="memberCheck24">
+                            <label class="custom-control-label" for="memberCheck24">Member 2</label>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <input type="checkbox" class="custom-control-input" id="memberCheck34">
+                            <label class="custom-control-label" for="memberCheck34">Member 3</label>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <input type="checkbox" class="custom-control-input" id="memberCheck44">
+                            <label class="custom-control-label" for="memberCheck44">Member 4</label>
+                        </a>
+                    </div>
+                </div>
+                <a href="addemployees.html" class="list-group-item list-group-item-action">
+                    <i class="fas fa-user-plus menu-icon"></i>&nbsp;&nbsp;  Add Employee
+                </a>
+                <a href="#openModal-allow" class="list-group-item list-group-item-action">
+                    <i class="fa fa-cubes menu-icon"></i>&nbsp;&nbsp;  Add Allocated Leave
+                </a>
+                <a href="#openModal-about" class="list-group-item list-group-item-action">
+                    <i class="fas fa-calendar-plus menu-icon"></i>&nbsp;&nbsp; Add Company Holiday
+                </a>
+                <a href="#openModal-leave" class="list-group-item list-group-item-action">
+                    <i class="fab fa-algolia menu-icon"></i>&nbsp;&nbsp; Add Employee Leave
+                </a>
+                <a href="leaverequests.html" class="list-group-item list-group-item-action">
+                    <i class="fas fa-list-ul menu-icon"></i>&nbsp;&nbsp;  View Leave Request
+                </a>
+                <a href="viewemployees.html" class="list-group-item list-group-item-action">
+                    <i class="fas fa-user-circle menu-icon"></i>&nbsp;&nbsp; View Employee
+                </a>
+            </div>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+
+
+        <!--***************************************************************
+        DashBord End
+        ##############################################################*-->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+
+            <nav class="navbar navbar-expa navbar-light"> <!--border-bottom-->
+                <div class="continer" onclick="myFunction(this)"  id="menu-toggle">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+
+
+            </nav>
+
+
+            <div class="container-fluid">
+
+                <div class="card shadow p-3 mb-5 bg-black rounded">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class=" head-style">
+                                <h3 class="card-title font-style">My Profile</h3>
+                                <hr>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="row">
+                        <div class="col-sm-4 col-md-6 text-center">
+                            <img src="images/sayi.jpg" id="myImg">
+                            <div id="myModal" class="modal">
+                                <span class="closeds"><i class="fas fa-times"></i></span>
+                                <img class="modal-content" id="img01">
+                                <div id="caption"></div>
+                            </div>
+                            <div class="text-block">
+                                <p class="location-style"> <i class="fa fa-map-marker icon-style" aria-hidden="true"></i> Alvai East, Point Pedro</p>
+                                <p class="location-style"> <i class="fa fa-home icon-style" aria-hidden="true"></i>0779792764</p>
+
+                            </div>
+                        </div>
+                        <div class="col-sm-8 col-md-6 genral">
+                            <h2 class="heading-style">Sayini Mahadeva</h2>
+                            <p class="p-style2">Intern Software Engineer</p>
+                            <p class="p-style"><i class="fa fa-phone fa-icon-style" aria-hidden="true"></i><a href="tel:0778378654"> 0778378654 </a></p>
+                            <p class="p-style"> <i class="fa fa-envelope-open fa-icon-style" aria-hidden="true"></i>
+                                <a href="mailto:ram727456@gmail.com?Subject=Hello%20again">
+                                    sai@gmail.com</a></p>
+
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="card-body">
+
+
+
+                        <div class="row">
+                            <!--**************************************************************************************************-->
+                            <div class=" col-sm-5 col-md-5" id="shadow-label">
+                                <p class="contact-style"> <i class="fa fa-address-book fa-icon-style" aria-hidden="true"></i> GENERAL
+                                    INFORMATION</p>
+                                <div class="row font-change">
+                                    <div class="col-sm-6 font-padding">DOB</div>
+
+                                    <div class="col-sm-6 font-padding location-style">19-11-1995</div>
+                                </div>
+                                <div class="row font-change">
+                                    <div class="col-sm-6 font-padding">NIC</div>
+
+                                    <div class="col-sm-6 font-padding ">956754365v</div>
+                                </div>
+                                <div class="row font-change">
+                                    <div class="col-sm-6 font-padding">Nationality</div>
+
+                                    <div class="col-sm-6 font-padding location-style">SriLankan</div>
+                                </div>
+                                <div class="row font-change">
+                                    <div class="col-sm-6 font-padding">Martital Status</div>
+
+                                    <div class="col-sm-6 font-padding">Single</div>
+                                </div>
+
+
+                            </div>
+                            <!--*****************************************************************************************************-->
+<div class="col-sm-1 col-md-1"></div>
+                            <!--*******************************************************************************-->
+                            <div class=" col-sm-5 col-md-5" id="shadow-label2">
+                                <p class="contact-style "> <i class="fa fa-university fa-icon-style" aria-hidden="true"></i> BANK
+                                    INFORMATION</p>
+                                <div class="row font-change">
+                                    <div class="col-md-6 font-padding">Bank</div>
+
+                                    <div class="col-md-6 font-padding location-style">BOC</div>
+                                </div>
+                                <div class="row font-change">
+                                    <div class="col-md-6 font-padding">Account No</div>
+
+                                    <div class="col-md-6 font-padding">4354642</div>
+                                </div>
+                                <div class="row font-change">
+                                    <div class="col-md-6 font-padding">Branch</div>
+
+                                    <div class="col-md-6 font-padding location-style">Nelliady</div>
+                                </div>
+                                <div class="row font-change">
+                                    <div class="col-md-6 font-padding">Type of Account</div>
+
+                                    <div class="col-md-6 font-padding">Saving</div>
+                                </div>
+
+
+                            </div>
+                            <!--**********************************************************************************************-->
+
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-4">
+                                <a href="viewemployees.html"> <button class="button_back" >Back</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+        <!--/***************************************************************
+        DashBord End
+        ##############################################################-->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!--||||||||||||||||||\\\\\\\\\\\\\\\\\SIDE BAR End//////////////////||||||||||||||||||||-->
+
+
+
+
+
+
+    <!--||||||||||||||||||\\\\\\\\\\\\\\\\\//////////////////||||||||||||||||||||
+                                        MODALS
+        ||||||||||||||||||\\\\\\\\\\\\\\\\\//////////////////||||||||||||||||||||-->
+
+    <!--modals Add Allocated Leave-->
+    <div id="openModal-allow" class="modalDialog">
+        <div>
+            <a href="#close" title="Close" class="closes">X</a>
+            <div class="container">
+                <div class="panel-heading">
+                    <h3><u>Add Allocated Leave</u></h3>
+                </div>
+
+                <div class="part1row">
+
+                    <div class="wrap-input100 validate-input m-t-85 m-b-350">
+                        <label>Name </label>
+                        <input class="input100" type="text" name="holiday_name" placeholder="Enter Name">
+                        <span class="focus-input100"></span>
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col-sm-6">
+                            <div class="wrap-input1000 validate-input m-t-85 m-b-35">
+                                <label>Allocated Casual Leave </label>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-sm-6">
+                            <div class="wrap-input100 validate-input m-t-85 m-b-35">
+
+                                <input class="input100" type="text" name="holiday_name" placeholder="Enter Allocated Casual Leave">
+                                <span class="focus-input100"></span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col-sm-6">
+                            <div class="wrap-input1000 validate-input m-t-85 m-b-35">
+                                <label>Allocated Annual Leave </label>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-sm-6">
+                            <div class="wrap-input100 validate-input m-t-85 m-b-35">
+
+                                <input class="input100" type="text" name="holiday_name" placeholder="Enter Allocated Annual Leave">
+                                <span class="focus-input100"></span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col-sm-6">
+                            <div class="wrap-input1000 validate-input m-t-85 m-b-35">
+                                <label>Allocated Nopay Leave </label>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-sm-6">
+                            <div class="wrap-input100 validate-input m-t-85 m-b-35">
+
+                                <input class="input100" type="text" name="holiday_name" placeholder="Enter Allocated Nopay Leave">
+                                <span class="focus-input100"></span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col-sm-6">
+                            <div class="wrap-input1000 validate-input m-t-85 m-b-35">
+                                <label>Allocated Sick Leave </label>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-sm-6">
+                            <div class="wrap-input100 validate-input m-t-85 m-b-35">
+
+                                <input class="input100" type="text" name="holiday_name" placeholder="Enter Allocated Sick Leave">
+                                <span class="focus-input100"></span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col-sm-6">
+                            <div class="wrap-input1000 validate-input m-t-85 m-b-35">
+                                <label>Allocated Special Leave </label>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-sm-6">
+                            <div class="wrap-input100 validate-input m-t-85 m-b-35">
+
+                                <input class="input100" type="text" name="holiday_name" placeholder="Enter Allocated Special Leave">
+                                <span class="focus-input100"></span>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="button_label pull-right">
+
+                <label class="continue ">
+                    <button type="submit" class="btn-sm btn-lg-con">Save</button>
+                </label>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!--modals Add Leave for an Employee-->
+    <div id="openModal-leave" class="modalDialog">
+        <div>
+            <a href="#close" title="Close" class="closes">X</a>
+            <div class="container">
+                <div class="panel-heading">
+                    <h3><u>Add Leave for an Employee</u></h3>
+                </div>
+
+                <div class="part1row">
+
+                    <div class="wrap-input100 validate-input m-t-85 m-b-350">
+                        <label>Name </label>
+                        <input class="input100" type="text" name="holiday_name" placeholder="Enter Name">
+                        <span class="focus-input100"></span>
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col-sm-6">
+                            <div class="wrap-input100 validate-input m-t-85 m-b-350">
+
+                                <input class="input100" type="text" name="holiday_name" placeholder="Enter Leave Type">
+                                <span class="focus-input100"></span>
+                            </div>
+
+                        </div>
+
+                        <div class="col-sm-6">
+                            <div class="wrap-input100 validate-input m-t-85 m-b-350">
+
+                                <input class="input100" type="text" name="holiday_name" placeholder="Enter Allocated Casual Leave">
+                                <span class="focus-input100"></span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="wrap-input100 validate-input m-t-85 m-b-35">
+                        <label>Cover Persion </label>
+                        <input class="input100" type="text" name="holiday_name" placeholder="Enter Cover Persion Name">
+                        <span class="focus-input100"></span>
+                    </div>
+
+                    <div class="wrap-input100 validate-input m-t-85 m-b-35">
+                        <label>Description </label>
+                        <input class="input100" type="text" name="holiday_name" placeholder="Enter Description">
+                        <span class="focus-input100"></span>
+                    </div>
+
+
+
+
+                </div>
+
+                <div class="button_label">
+
+                    <label class="continue ">
+                        <button type="submit" class="btn-sm btn-lg-con">Request</button>
+                    </label>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    <!--modals Add Company Holiday-->
+    <div id="openModal-about" class="modalDialog ">
+        <div>
+            <a href="#close" title="Close" class="closes">X</a>
+            <div class="container">
+                <div class="panel-heading">
+                    <h3><u>Add Company Holiday</u></h3>
+                </div>
+
+                <div class="part1row">
+
+
+                    <div class="wrap-input100 validate-input m-t-85 m-b-35">
+                        <label>Name of Holiday </label>
+                        <input class="input100" type="text" name="holiday_name" placeholder="Enter Holiday Name">
+                        <span class="focus-input100"></span>
+                    </div>
+
+
+
+                    <div class="wrap-input100 validate-input m-t-85 m-b-35">
+                        <label>Company Holiday Date </label>
+                        <input class="input100" type="text" name="holiday_date" placeholder="Enter Holiday Date">
+                        <span class="focus-input100"></span>
+                    </div>
+
+
+
+
+                    <div class="wrap-input100 validate-input m-t-85 m-b-35">
+                        <label>Description </label>
+                        <input class="input100" type="text" name="description" placeholder="Write Description">
+                        <span class="focus-input100"></span>
+                    </div>
+
+
+                </div>
+
+                <div class="button_label">
+
+                    <label class="continue ">
+                        <button type="submit" class="btn-sm btn-lg-con">Save</button>
+                    </label>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!--modals profile-->
+    <div id="openModal-profile" class="modalDialog">
+
+        <div id="card">
+            <a href="#close" title="Close" class="closes">X</a>
+            <h1 class="h1">Tharusan Karunamoorthy</h1>
+            <div class="image-crop">
+                <img id="avatar" src="images/02.png"></img>
+            </div>
+            <div id="bio">
+                <p>Hello, my name is Tharusan! Bacon ipsum dolor amet short ribs prosciutto strip steak, pig ham tongue buffalo beef ribs hamburger pork venison. </p>
+            </div>
+            <div id="stats" class="text-center">
+                <div class="col">
+                    <p class="stat">5</p>
+                    <p class="labeld">Short Leaves</p>
+                </div>
+                <div class="col">
+                    <p class="stat">2</p>
+                    <p class="labeld">Half Days</p>
+                </div>
+                <div class="col">
+                    <p class="stat">1</p>
+                    <p class="labeld">Full Leaves</p>
+                </div>
+            </div>
+            <div id="buttons">
+                <button class="but" id="msg"><a href="profile.html">Full Profile</a></button>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <footer class="footer">
+        <div class="container-fluid">
+            <div class="legal">
+                <p class="copy_r">&copy; 2019 Something. All rights reserved.</p>
+
+                <div class="legal__links">
+                    <span>Made with <span class="heart">♥</span> remotely from | Unicom SD PVT (Ltd)</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--||||||||||||||||||\\\\\\\\\\\\\\\\\Back-To-Top Start//////////////////||||||||||||||||||||-->
+                <i class="fas fa-rocket text-primary title-tip title-tip-up" title="Back" onclick="topFunction()" id="myBtn"></i>
+    <!--||||||||||||||||||\\\\\\\\\\\\\\\\\Back-To-Top End//////////////////||||||||||||||||||||-->
+
+    <!--=================================================================================================================-->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<!--=================================================================================================================-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<!--=================================================================================================================-->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<!--=================================================================================================================-->
+<script src="js/main.js"></script>
+<!--=================================================================================================================-->
+<!--=================================================================================================================-->
+
+</body>
+</html>

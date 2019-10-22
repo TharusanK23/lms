@@ -1,0 +1,426 @@
+
+
+/***************************************************************
+                           Navbar Start
+##############################################################*/
+
+
+/*===============================================Navebar Responsive Start================================================*/
+
+
+@media  only screen and (min-width: 992px){
+    .form-inline span{
+        display: none;
+    }
+    .popup {
+        margin: 78px 1100px;
+        width: 18%;
+    }
+    .modalDialogs .action{
+        width: 312px;
+        padding-bottom: 50px;
+    }
+
+
+}
+@media  only screen and (max-width: 1100px){
+    .overlay {
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.7);
+        transition: opacity 500ms;
+        visibility: hidden;
+        opacity: 0;
+    }
+    .overlay:target {
+        visibility: visible;
+        opacity: 1;
+    }
+    .popup {
+        margin: 78px auto auto 600px;
+        padding: 20px;
+        background: #fff;
+        border-radius: 5px;
+        width: 40%;
+        position: absolute;
+        transition: all 2s ease-in-out;
+    }
+    .popup .close {
+        position: absolute;
+        top: 0;
+        right: 10px;
+        transition: all 200ms;
+        font-size: 30px;
+        font-weight: bold;
+        text-decoration: none;
+        color: #333;
+    }
+    .popup .content {
+        max-height: 30%;
+        overflow: auto;
+    }
+    .modalDialogs .action{
+        width: 312px;
+        padding-bottom: 50px;
+    }
+    .hr{
+        margin-top: 1rem;
+        margin-bottom: -2rem;
+        /*border: 0;*/
+        border: 1px solid #ededed;
+        width: 285px;
+        margin-left: -5rem;
+    }
+    .hrm{
+        margin-top: 1rem;
+        margin-bottom: -2rem;
+        /* border: 0; */
+        border: 1px solid #ededed;
+        width: 285px;
+        margin-left: -5rem;
+    }
+    .hrs{
+        margin-top: 1rem;
+        margin-bottom: -2rem;
+        /* border: 0; */
+        border: 1px solid #25bfa6;
+        width: 285px;
+        margin-left: -5rem;
+    }
+    .hrt{
+        margin-top: 1rem;
+        margin-bottom: -2rem;
+        /* border: 0; */
+        border: 1px solid #ffd05b;
+        width: 285px;
+        margin-left: -5rem;
+    }
+
+}
+
+@media  only screen and (max-width: 992px){
+    .overlay {
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.7);
+        transition: opacity 500ms;
+        visibility: hidden;
+        opacity: 0;
+    }
+    .overlay:target {
+        visibility: visible;
+        opacity: 1;
+    }
+    .popup {
+        margin: 10px auto auto 450px;
+        padding: 20px;
+        background: #fff;
+        border-radius: 5px;
+        width: 40%;
+        position: absolute;
+        transition: all 2s ease-in-out;
+    }
+    .popup .close {
+        position: absolute;
+        top: 0;
+        right: 10px;
+        transition: all 200ms;
+        font-size: 30px;
+        font-weight: bold;
+        text-decoration: none;
+        color: #333;
+    }
+    .popup .content {
+        max-height: 30%;
+        overflow: auto;
+    }
+    .icon{
+        margin-left: -13px;
+    }
+    .modalDialogs .action{
+        padding: 20px;
+        padding-bottom: 50px;
+    }
+    .hr{
+        margin-top: 1rem;
+        margin-bottom: -2rem;
+        /*border: 0;*/
+        border: 1px solid #ededed;
+        width: 180px;
+        margin-left: -3rem;
+    }
+    .hrm{
+        margin-top: 1rem;
+        margin-bottom: -2rem;
+        /* border: 0; */
+        border: 1px solid #ededed;
+        width: 180px;
+        margin-left: -3rem;
+    }
+    .hrs{
+        margin-top: 1rem;
+        margin-bottom: -2rem;
+        /* border: 0; */
+        border: 1px solid #25bfa6;
+        width: 180px;
+        margin-left: -3rem;
+    }
+    .hrt{
+        margin-top: 1rem;
+        margin-bottom: -2rem;
+        /* border: 0; */
+        border: 1px solid #ffd05b;
+        width: 180px;
+        margin-left: -3rem;
+    }
+
+}
+
+@media  only screen and (max-width: 620px){
+    .overlay {
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.7);
+        transition: opacity 500ms;
+        visibility: hidden;
+        opacity: 0;
+    }
+    .overlay:target {
+        visibility: visible;
+        opacity: 1;
+    }
+    .popup {
+        margin: 10px auto auto 20px;
+        padding: 20px;
+        background: #fff;
+        border-radius: 5px;
+        width: 90%;
+        position: absolute;
+        transition: all 2s ease-in-out;
+    }
+    .popup .close {
+        position: absolute;
+        top: 0;
+        right: 10px;
+        transition: all 200ms;
+        font-size: 30px;
+        font-weight: bold;
+        text-decoration: none;
+        color: #333;
+    }
+    .popup .content {
+        max-height: 30%;
+        overflow: auto;
+    }
+    .form-inline a i span{
+
+    }
+    .icon{
+        margin-left: -13px;
+    }
+    .modalDialogs .action{
+        padding: 20px;
+        padding-bottom: 50px;
+    }
+    .hr{
+        margin-top: 1rem;
+        margin-bottom: -2rem;
+        /*border: 0;*/
+        border: 1px solid #ededed;
+        width: 130px;
+        margin-left: -2rem;
+    }
+    .hrm{
+        margin-top: 1rem;
+        margin-bottom: -2rem;
+        /* border: 0; */
+        border: 1px solid #ededed;
+        width: 130px;
+        margin-left: -2rem;
+    }
+    .hrs{
+        margin-top: 1rem;
+        margin-bottom: -2rem;
+        /* border: 0; */
+        border: 1px solid #25bfa6;
+        width: 130px;
+        margin-left: -2rem;
+    }
+    .hrt{
+        margin-top: 1rem;
+        margin-bottom: -2rem;
+        /* border: 0; */
+        border: 1px solid #ffd05b;
+        width: 130px;
+        margin-left: -2rem;
+    }
+
+}
+
+
+
+@media  only screen and (max-width: 400px){
+    .overlay {
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.7);
+        transition: opacity 500ms;
+        visibility: hidden;
+        opacity: 0;
+    }
+    .overlay:target {
+        visibility: visible;
+        opacity: 1;
+    }
+    .popup {
+        margin: 10px auto auto 20px;
+        padding: 20px;
+        background: #fff;
+        border-radius: 5px;
+        width: 90%;
+        position: absolute;
+        transition: all 2s ease-in-out;
+    }
+    .popup .close {
+        position: absolute;
+        top: 0;
+        right: 10px;
+        transition: all 200ms;
+        font-size: 30px;
+        font-weight: bold;
+        text-decoration: none;
+        color: #333;
+    }
+    .popup .content {
+        max-height: 30%;
+        overflow: auto;
+    }
+    .icon{
+        margin-left: -13px;
+    }
+    .modalDialogs .action{
+        padding: 20px;
+        padding-bottom: 50px;
+        margin-left: 1px;
+    }
+    .hr{
+        margin-top: 1rem;
+        margin-bottom: -2rem;
+        /*border: 0;*/
+        border: 1px solid #ededed;
+        width: 100px;
+        margin-left: -1rem;
+    }
+    .hrm{
+        margin-top: 1rem;
+        margin-bottom: -2rem;
+        /* border: 0; */
+        border: 1px solid #ededed;
+        width: 100px;
+        margin-left: -1rem;
+    }
+    .hrs{
+        margin-top: 1rem;
+        margin-bottom: -2rem;
+        /* border: 0; */
+        border: 1px solid #25bfa6;
+        width: 100px;
+        margin-left: -1rem;
+    }
+    .hrt{
+        margin-top: 1rem;
+        margin-bottom: -2rem;
+        /* border: 0; */
+        border: 1px solid #ffd05b;
+        width: 100px;
+        margin-left: -1rem;
+    }
+
+}
+
+
+
+
+
+/***************************************************************
+                           Navbar Start
+##############################################################*/
+
+
+/*===============================================Navebar Responsive Start================================================*/
+
+@media  only screen and (max-width: 992px){
+    .navbar_top{
+        box-shadow: 0px 5px 4px #8e9ca8;
+    }
+    .search_01{
+        display: none;
+    }
+
+}
+
+/*===============================================Navebar Search Responsive Start================================================*/
+
+@media  only screen and (min-width: 992px){
+    #demo-2 input[type=search]:focus {
+        width: 250px;
+        padding-left: 32px;
+        color: #324a5e;
+        cursor: auto;
+        transform: translateY(61px);
+    }
+    .search_02{
+        display: none;
+    }
+}
+
+/*===============================================Navebar Serach Responsive End================================================*/
+
+/*===============================================Navebar Responsive End================================================*/
+
+
+/***************************************************************
+                           Navbar End
+##############################################################*/
+
+
+
+
+
+/*===============================================Navebar Responsive End================================================*/
+
+
+/*===============================================SIDEBAR Responsive Start================================================*/
+
+        /*++++++++++ Side Bar ++++++++++++*/
+
+@media (min-width: 768px) {
+    #sidebar-wrapper {
+        margin-left: 0;
+    }
+
+    #page-content-wrapper {
+        min-width: 0;
+        width: 100%;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        margin-left: -15rem;
+    }
+    .fa-chevron-circle-right{
+        display: none;
+    }
+}
+/*===============================================SIDEBAR Responsive Start================================================*/
+
+/***************************************************************
+                           Navbar End
+##############################################################*/

@@ -1,0 +1,447 @@
+
+/*===============================================Table Start================================================*/
+
+
+/***************************************************************
+                           TABLE
+##############################################################*/
+
+/*.table_data{*/
+    /*margin-top: -30px;*/
+/*}*/
+
+/*
+#ticket-table-wrapper {
+  margin: 100px auto;
+  background-color: rgba(235, 233, 247, 1);
+  width: 80%;
+  height: 100%;
+  padding: 24px;
+  border-radius: 20px;
+} */
+#ticket-table td span:hover ,#ticket-table td:hover{
+    /* color: #4F4E4E; */
+    font-weight: 600;
+}
+
+#ticket-table {
+    font-size: 14px;
+    width: 100%;
+    background-color: ecedef;
+    border-collapse: collapse;
+    border-radius: 5px;
+    margin-top: 30px;
+    /* box-shadow: 1px 1px 3px #000; */
+    box-shadow: 0px 1px 4px #8e9ca8;
+
+}
+#ticket-table thead tr th{
+    text-align: left;
+
+}
+
+#ticket-table tr {
+    height: 74px;
+}
+
+#ticket-table tbody td {
+    border-top-style: solid;
+    border-color: white;
+    text-align: left;
+}
+#ticket-table tbody td img {
+    width: 45px;
+    padding-left: 10px;
+    margin-left: 20px;
+    vertical-align: middle;
+}
+h2{
+    font-size: 32px;
+}
+.badges {
+    padding: 0.5em 0.75em;
+    border-radius: 10px;
+    font-size: 11px;
+}
+
+.badge-success-alt {
+    background-color: #d7f2c2;
+    color: #38C41C;
+}
+.badge-danger-alt {
+    background-color: #EEC8C8;
+    color: #FE4646;
+}
+.badge-warning-alt {
+    background-color: #F7E2C6;
+    color: #FCA827;
+}
+
+.dates{
+    color: #85929E;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.dots a i{
+    width: 10px;
+    height: 10px;
+    font-size: 22px;
+}
+.dots{
+    margin-left: 10px;
+    color: #808B93;
+
+}
+.dots:hover{
+    margin-left: 10px;
+    color: #324a5e;
+}
+.dots, .dots a {
+    outline: none !important;
+    border: none;
+    background: transparent;
+    color: #324a5e;
+}
+
+
+/*===============================================Table End================================================*/
+
+
+/*===============================================STEP BUTTON Start================================================*/
+
+
+
+.multi-steps > li.is-active:before, .multi-steps > li.is-active ~ li:before {
+    content: counter(stepNum);
+    font-family: inherit;
+    font-weight: 700;
+}
+.multi-steps > li.is-active:after, .multi-steps > li.is-active ~ li:after {
+    background-color: #ededed;
+
+}
+.multi-steps > li.is-active{
+    color: #ffd05b;
+}
+
+
+.multi-steps {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+}
+.multi-steps > li {
+    counter-increment: stepNum;
+    text-align: center;
+    display: table-cell;
+    position: relative;
+    color: #25bfa6;
+}
+.multi-steps > li:before {
+    /*content: '\f00c';*/
+    /*content: '\2713;';*/
+    /*content: '\10003';*/
+    /*content: '\10004';*/
+    content: '\2713';
+    display: block;
+    margin: 0 auto 4px;
+    background-color: #fff;
+    width: 36px;
+    height: 36px;
+    line-height: 32px;
+    text-align: center;
+    font-weight: bold;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #25bfa6;
+    border-radius: 50%;
+}
+/* .multi-steps > li:after {
+  content: '';
+  height: 2px;
+  width: 100%;
+  background-color: tomato;
+  position: absolute;
+  top: 16px;
+  left: 50%;
+  z-index: -1;
+} */
+.multi-steps > li:last-child:after {
+    display: none;
+}
+.multi-steps > li.is-active:before {
+    background-color: #fff;
+    border-color: #ffd05b;
+}
+.multi-steps > li.is-active ~ li {
+    color: #808080;
+}
+.multi-steps > li.is-active ~ li:before {
+    background-color: #ededed;
+    border-color: #ededed;
+}
+/*===============================================STEP BUTTON End================================================*/
+
+@media  only screen and (min-width: 993px) {
+    .panel01{
+        display: none;
+    }
+}
+@media (max-width: 768px) {
+    .pan01{
+    display: none;
+    }
+    .cover_persion, .cover_persion_name{
+        display: none;
+    }
+}
+@media (min-width: 768px) {
+    .sear{
+        display: none;
+    }
+
+    .wraps_adds {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0px 0 0 350px;
+    }
+
+}
+@media  only screen and (max-width: 620px) {
+    .cover_persion_name{
+        display: none;
+    }
+    .sear{
+        display: none;
+    }
+    .wraps_adds {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: -35px 0 0 250px;
+    }
+    .panel02{
+        display: none;
+    }
+}
+@media  only screen and (max-width: 500px){
+    .cover_persion, .cover_persion_name{
+        display: none;
+    }
+    .sear{
+        display: none;
+    }
+    .wraps_adds {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: -35px 0 0 280px;
+    }
+    .panel02{
+        display: none;
+    }
+}
+@media  only screen and (max-width: 400px) {
+    .cover_persion, .cover_persion_name{
+        display: none;
+    }
+    .sear{
+        display: none;
+    }
+    .wraps_adds {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: -35px 0 0 250px;
+    }
+    .panel02{
+        display: none;
+    }
+}
+
+
+
+/*===============================================Navebar Search Start================================================*/
+
+
+.find {
+    outline: none;
+}
+.find[type=search] {
+    -webkit-appearance: textfield;
+    -webkit-box-sizing: content-box;
+    font-family: inherit;
+    font-size: 100%;
+}
+.find::-webkit-search-decoration,
+.find::-webkit-search-cancel-button {
+    display: none;
+}
+
+
+.find[type=search] {
+    background: #fff url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 10px center;
+    border: solid 1px #fff;
+    padding: 9px 10px 9px 32px;
+    width: 55px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+
+    -webkit-border-radius: 10em;
+    -moz-border-radius: 10em;
+    border-radius: 10em;
+
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    transition: all .5s;
+}
+.find[type=search]:focus {
+    width: 130px;
+    background-color: #fff;
+    border-color: #66CC75;
+
+    -webkit-box-shadow: 0 0 5px rgba(109,207,246,.5);
+    -moz-box-shadow: 0 0 5px rgba(109,207,246,.5);
+    box-shadow: 0 0 5px rgba(109,207,246,.5);
+}
+
+
+.find:-moz-placeholder {
+    color: #999;
+}
+.find::-webkit-input-placeholder {
+    color: #999;
+}
+
+/* Demo 2 */
+#demo-3 .find[type=search] {
+    width: 20px;
+    padding-left: 14px;
+    color: transparent;
+    cursor: pointer;
+}
+#demo-3 .find[type=search]:hover {
+    background-color: #2EE59D;
+    color: #fff;
+    border: solid 1px #2EE59D;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    transform: translateY(-7px);
+
+}
+#demo-3 .find[type=search]:focus {
+    width: 200px;
+    padding-left: 32px;
+    color: #324a5e;
+    background-color: #fff;
+    cursor: auto;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    transform: translateY(-7px);
+
+}
+#demo-3 .find:-moz-placeholder {
+    color: transparent;
+}
+#demo-3 .find::-webkit-input-placeholder {
+    color: transparent;
+}
+
+/*===============================================Navebar Serach End================================================*/
+
+
+/*===============================================Navebar Search Responsive Start================================================*/
+
+@media  only screen and (min-width: 992px){
+    #demo-3 .find[type=search]:focus {
+        width: 200px;
+        padding-left: 32px;
+        color: #324a5e;
+        cursor: auto;
+        transform: translateY(0px);
+    }
+
+}
+
+/*===============================================Navebar Serach Responsive End================================================*/
+
+
+/*===============================================Add Start================================================*/
+
+
+.wraps_add {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 120px;
+}
+
+.button_add{
+    width: 80px;
+    height: 45px;
+    font-family: Poppins;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: bolder;
+    color: #fff;
+    background-color: #2DD28B;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+
+.button_add i{
+    font-size: 14px;
+}
+
+.button_add:hover {
+    background-color: #2ef0a7;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+}
+
+
+/*===============================================Add Start================================================*/
+
+
+
+.pagination {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 5px 10px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 0 2px;
+    text-align: center;
+    width: 35px;
+}
+
+
+.pagination a.active {
+    background-color: #4CAF50;
+    color: white;
+    border: 1px solid #4CAF50;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
+
+
+
+/*$$$$$$$$$$$$$$$$$$$$ profile $$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+
